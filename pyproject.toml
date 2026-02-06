@@ -5,7 +5,7 @@ requires-python = ">=3.11"
 dependencies = [
   "httpx",
   "pydantic",
-  "pyyaml",
+  "rfc8785",
 ]
 
 [project.scripts]
