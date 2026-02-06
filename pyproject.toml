@@ -1,0 +1,21 @@
+[project]
+name = "srcf-sync"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+  "httpx",
+  "pydantic",
+  "pyyaml",
+]
+
+[project.scripts]
+srcf-sync = "srcf_sync.cli:main"
+
+[dependency-groups]
+dev = [
+  "ruff",
+  "pytest",
+]
+
+[tool.ruff]
+line-length = 100
